@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="index.js"></script>
+
+    <title>Teste Lenscope</title>
+</head>
+
+<body>
+    <h1>Preencha as informações abaixo</h1>
+
+    <form>
+        <h3>Olho Esquerdo</h3>
+
+        <label>Grau Esférico</label>
+        <input id="grauEsfericoEsquerdo" type="number" value="0" max="0" min="-15" step="0.25" onchange="grauOnChange(this.value, this.id)" />
+        <label>Grau Cilíndrico</label>
+        <input id="grauCilindricoEsquerdo" type="number" value="0" max="0" min="-6" step="0.25" onchange="grauOnChange(this.value, this.id)" />
+
+        <br /><br />
+
+        <h3>Olho Direito</h3>
+
+        <label>Grau Esférico</label>
+        <input id="grauEsfericoDireito" type="number" value="0" max="0" min="-15" step="0.25" onchange="grauOnChange(this.value, this.id)" />
+        <label>Grau Cilíndrico</label>
+        <input id="grauCilindricoDireito" type="number" value="0" max="0" min="-6" step="0.25" onchange="grauOnChange(this.value, this.id)" />
+
+        <br /><br />
+
+        <label>Lente Prime:</label>
+        <input id="lentePrime" type="checkbox" disabled />
+        <label>Lente Vision:</label>
+        <input id="lenteVision" type="checkbox" />
+
+        <br /><br />
+
+        <button>Confirmar</button>
+    </form>
+</body>
+</html>
